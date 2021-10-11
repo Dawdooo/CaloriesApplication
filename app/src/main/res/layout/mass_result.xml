@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MassResult">
+
+    <TextView
+        android:id="@+id/massResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:text="To gain weight, you should eat:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/massResultKcal"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massResultTitle" />
+
+    <TextView
+        android:id="@+id/massKcalTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Calories"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/massResultKcal"
+        app:layout_constraintTop_toBottomOf="@+id/massResultTitle" />
+
+    <TextView
+        android:id="@+id/massGramsOfProteins"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massResultKcal" />
+
+    <TextView
+        android:id="@+id/massProteinTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Grams of protein"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/massGramsOfProteins"
+        app:layout_constraintTop_toBottomOf="@+id/massKcalTxt" />
+
+    <TextView
+        android:id="@+id/massGramsOfFat"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massGramsOfProteins" />
+
+    <TextView
+        android:id="@+id/massFatTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Grams of fat"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/massGramsOfFat"
+        app:layout_constraintTop_toBottomOf="@+id/massProteinTxt" />
+
+    <TextView
+        android:id="@+id/massGramsOfCarbs"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massGramsOfFat" />
+
+    <TextView
+        android:id="@+id/massCarbsTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Grams of carbs"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/massGramsOfCarbs"
+        app:layout_constraintTop_toBottomOf="@+id/massFatTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

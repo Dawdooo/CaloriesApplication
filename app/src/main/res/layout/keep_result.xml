@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KeepResult">
+
+    <TextView
+        android:id="@+id/keepResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:text="To keep weight, you should eat:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/keepKcal"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keepResultTitle" />
+
+    <TextView
+        android:id="@+id/utrzyKcalTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Calories"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/keepKcal"
+        app:layout_constraintTop_toBottomOf="@+id/keepResultTitle" />
+
+    <TextView
+        android:id="@+id/keepGramsOfProteins"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keepKcal" />
+
+    <TextView
+        android:id="@+id/utrzyProteinTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Grams of protein"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/keepGramsOfProteins"
+        app:layout_constraintTop_toBottomOf="@+id/utrzyKcalTxt" />
+
+    <TextView
+        android:id="@+id/keepGramsOfFat"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keepGramsOfProteins" />
+
+    <TextView
+        android:id="@+id/utrzyFatTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Grams of fat"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/keepGramsOfFat"
+        app:layout_constraintTop_toBottomOf="@+id/utrzyProteinTxt" />
+
+    <TextView
+        android:id="@+id/keepGramsOfCarbs"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keepGramsOfFat" />
+
+    <TextView
+        android:id="@+id/utrzyCarbsTxt"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Grams of carbs"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/keepGramsOfCarbs"
+        app:layout_constraintTop_toBottomOf="@+id/utrzyFatTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
